@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matimeles Services - Criar Conta</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="ambient"></div>
+
+<header>
+  <div class="nav-container">
+    <div class="logo"><span class="logo-mark">🌿</span> MATIMELES</div>
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <ul id="navMenu">
+      <li><a class="nav-btn" href="index.html">Home</a></li>
+      <li><a class="nav-btn" href="servicos.html">Serviços</a></li>
+      <li><a class="nav-btn" href="sobre.html">Sobre</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="btn-ghost" href="login.html" style="display:inline-flex;align-items:center;">Login</a>
+      <a class="btn-pill" href="login.html" style="display:inline-flex;align-items:center;">Começar →</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="registro" class="tab-page active">
+<div class="login-wrap">
+      <h2>Crie a sua conta</h2>
+      <p class="subtitle">Junte-se à Matimeles Services em poucos passos</p>
+      <form id="registerForm">
+        <div class="form-group">
+          <label for="reg-nome">Nome completo</label>
+          <input type="text" id="reg-nome" placeholder="O seu nome" required>
+        </div>
+        <div class="form-group">
+          <label for="reg-email">E-mail</label>
+          <input type="email" id="reg-email" placeholder="seuemail@exemplo.com" required>
+        </div>
+        <div class="form-group">
+          <label for="reg-negocio">Nome do negócio</label>
+          <input type="text" id="reg-negocio" placeholder="Nome da sua loja ou empresa">
+        </div>
+        <div class="form-group">
+          <label for="reg-senha">Senha</label>
+          <input type="password" id="reg-senha" placeholder="••••••••" required>
+        </div>
+        <button type="submit" class="btn-pill">Criar conta</button>
+        <div class="form-msg" id="registerMsg">Conta criada com sucesso!</div>
+      </form>
+      <div class="login-extra">Já tem conta? <a href="login.html">Entrar</a></div>
+    </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-col">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="#">Carreiras</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Serviços</h4>
+      <ul>
+        <li><a href="servicos.html">Divulgação</a></li>
+        <li><a href="servicos.html">Busca de Clientes</a></li>
+        <li><a href="servicos.html">Apoio ao Negócio</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="privacidade.html">Privacidade</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>Matimeles Services</span>
+    <span>&copy; 2026 Matimeles Services. Todos os direitos reservados.</span>
+  </div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="auth.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

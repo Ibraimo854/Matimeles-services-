@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matimeles Services - Meu Perfil</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="ambient"></div>
+
+<header>
+  <div class="nav-container">
+    <div class="logo"><span class="logo-mark">🌿</span> MATIMELES</div>
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <ul id="navMenu">
+      <li><a class="nav-btn" href="index.html">Home</a></li>
+      <li><a class="nav-btn" href="servicos.html">Serviços</a></li>
+      <li><a class="nav-btn" href="sobre.html">Sobre</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="btn-ghost" onclick="sairDaConta()">Sair</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="tab-page active">
+  <div class="page-header">
+    <h2>Meu <em>Perfil</em></h2>
+    <p>Os seus dados na Matimeles Services</p>
+  </div>
+  <div class="login-wrap" style="text-align:left;">
+    <div class="form-group">
+      <label>Nome</label>
+      <p id="perfil-nome" style="padding:11px 14px;background:rgba(0,0,0,0.3);border:1px solid var(--glass-border);border-radius:10px;">Carregando...</p>
+    </div>
+    <div class="form-group">
+      <label>E-mail</label>
+      <p id="perfil-email" style="padding:11px 14px;background:rgba(0,0,0,0.3);border:1px solid var(--glass-border);border-radius:10px;">Carregando...</p>
+    </div>
+    <div class="form-group">
+      <label>Negócio</label>
+      <p id="perfil-negocio" style="padding:11px 14px;background:rgba(0,0,0,0.3);border:1px solid var(--glass-border);border-radius:10px;">Carregando...</p>
+    </div>
+    <button class="btn-pill" style="width:100%;" onclick="sairDaConta()">Terminar Sessão</button>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-col">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Serviços</h4>
+      <ul>
+        <li><a href="servicos.html">Divulgação</a></li>
+        <li><a href="servicos.html">Busca de Clientes</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="privacidade.html">Privacidade</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>Matimeles Services</span>
+    <span>&copy; 2026 Matimeles Services. Todos os direitos reservados.</span>
+  </div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="auth.js"></script>
+<script src="script.js"></script>
+<script>protegerPagina();</script>
+</body>
+</html>
